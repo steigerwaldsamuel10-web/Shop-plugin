@@ -1,0 +1,20 @@
+name: ShopPlugin
+version: 1.1.0
+main: de.yourname.shopplugin.ShopPlugin
+api-version: '1.21'
+authors: [ "YourName" ]
+softdepend: [Vault]
+commands:
+  shop:
+    description: Öffnet den Shop
+  editshop:
+    description: Shop bearbeiten (Sektionen/Items)
+    permission: shopplugin.edit
+  worth:
+    description: Öffnet die Preisübersicht
+  sell:
+    description: Verkauf deine Items
+permissions:
+  shopplugin.edit:
+    description: Erlaubt /editshop
+    default: op
